@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Porfolio UI</title>
+</head>
+<body>
+    <!-- class="animated fadeInRight" Pero tienes que usar JS para cambiar las clases a una determinada resolucion de pantalla -->
+    <aside >
+        <figure>
+            <div id="avatar"> </div>
+            <figcaption>Esmailyn D. Rodríguez</figcaption>
+        </figure>
+        <img src="images/menu.svg" alt="">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main >
+        <h1>I'm a designer of things</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil accusamus molestias tempora voluptate velit voluptatibus </p>
+
+        <a href="#" class="btn">My Portfolio</a>
+    </main>
+
+
+    <script> 
+        (function(){
+
+            var menu = document.querySelector('ul'),
+                menulink = document.querySelector('img');
+            
+                menulink.addEventListener('click', function(e){
+                menu.classList.toggle('active');
+                e.preventDefault();
+            });
+        })();
+    
+    </script>
+</body>
+</html>
